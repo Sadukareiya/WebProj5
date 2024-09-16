@@ -1,0 +1,69 @@
+/* テーブル全体の設定 */
+table {
+    width: auto; /* テーブルの幅をコンテンツに合わせる */
+    border-spacing: 0; /* セル間のスペースをなくす */
+    font-size: 14px; /* テキストのサイズを14pxに設定 */
+}
+
+/* テーブルヘッダーの設定 */
+table th {
+    color: #fff; /* ヘッダーの文字色を白に設定 */
+    padding: 8px 15px; /* セル内の余白を設定 */
+    background: #258; /* 背景色を設定 */
+    /* 背景にグラデーションを適用 */
+    background: -moz-linear-gradient(rgba(34,85,136,0.7), rgba(34,85,136,0.9) 50%);
+    background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34,85,136,0.7)), to(rgba(34,85,136,0.9)));
+    font-weight: bold; /* 文字を太字にする */
+    border-left: 1px solid #258; /* 左のボーダーを追加 */
+    border-top: 1px solid #258; /* 上のボーダーを追加 */
+    border-bottom: 1px solid #258; /* 下のボーダーを追加 */
+    line-height: 120%; /* 行の高さを120%に設定 */
+    text-align: center; /* テキストを中央に配置 */
+    text-shadow: 0 -1px 0 rgba(34,85,136,0.9); /* テキストの影を追加 */
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset; /* 内側のシャドウを追加 */
+}
+
+/* ヘッダーの最初のセルに角丸を適用 */
+table th:first-child {
+    border-radius: 5px 0 0 0; /* 左上に角丸を追加 */
+}
+
+/* ヘッダーの最後のセルに角丸を適用 */
+table th:last-child {
+    border-radius: 0 5px 0 0; /* 右上に角丸を追加 */
+    border-right: 1px solid #258; /* 右のボーダーを追加 */
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.1), 0px 1px 1px rgba(255,255,255,0.3) inset; /* 内側と外側のシャドウを追加 */
+}
+
+/* テーブルセルの設定 */
+table tr td {
+    padding: 8px 15px; /* セル内の余白を設定 */
+    border-bottom: 1px solid #84b2e0; /* 下のボーダーを設定 */
+    border-left: 1px solid #84b2e0; /* 左のボーダーを設定 */
+    text-align: center; /* テキストを中央に配置 */
+}
+
+/* 最後のセルに右ボーダーとシャドウを追加 */
+table tr td:last-child {
+    border-right: 1px solid #84b2e0; /* 右のボーダーを追加 */
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.1); /* 外側のシャドウを追加 */
+}
+
+/* 偶数行の背景色を変更して、見やすくする */
+table tr:nth-child(2n+1) {
+    background: #f1f6fc; /* 背景色を淡いブルーに */
+}
+
+/* 最後の行のセルに角丸を適用 */
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 5px; /* 左下に角丸を追加 */
+}
+table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0; /* 右下に角丸を追加 */
+}
+
+/* 行をホバーしたときに色を変える */
+table tr:hover {
+    background: #bbd4ee; /* ホバーした行の背景色を変更 */
+    cursor: pointer; /* カーソルをポインタに変更 */
+}
