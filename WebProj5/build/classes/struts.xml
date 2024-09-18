@@ -38,5 +38,22 @@
             <result name="error">loginError.jsp</result>
         </action>
 
+        <!-- InquiryActionの設定 -->
+        <action name="InquiryAction"
+        		class="com.diworksdev.webproj5.action.InquiryAction"
+        		method="execute">
+        	<!-- 成功した場合に推移するページ -->
+            <result name="success">inquiry.jsp</result>
+        </action>
+
+        <!-- InquiryCompleteActionの設定 -->
+        <action name="InquiryCompleteAction"
+        		class="com.diworksdev.webproj5.action.InquiryCompleteAction"
+        		method="execute">
+        	<!-- 成功した場合に推移するページ -->
+            <result name="success">inquiryComplete.jsp</result>
+        </action>
+
+
     </package>
 </struts>

@@ -3,20 +3,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>INDEX</title>
+    <meta charset="utf-8">
+    <title>INDEX</title>
 </head>
 <body>
-	<!-- HelloStrutsAction へのフォーム -->
-	<s:form action="HelloStrutsAction">
-		<!-- フォームの送信ボタン -->
-		<s:submit value="HelloStruts"/>
-	</s:form>
+    <!-- HelloStrutsActionへのフォーム -->
+    <s:form action="HelloStrutsAction">
+        <!-- ボタンを押すと、HelloStrutsActionが実行されます -->
+        <s:submit value="HelloStruts"/>
+    </s:form>
 
-	<!--  WelcomeAction へのフォーム -->
-	<s:form action="WelcomeAction">
-		<!-- フォームの送信ボタン -->
-		<s:submit value="Welcome"/>
-	</s:form>
+    <!-- WelcomeActionへのフォーム -->
+    <s:form action="WelcomeAction">
+        <!-- ボタンを押すと、WelcomeActionが実行されます -->
+        <s:submit value="Welcome"/>
+    </s:form>
+
+    <!-- InquiryActionへのフォーム -->
+    <s:form action="InquiryAction">
+        <!-- ボタンを押すと、InquiryActionが実行されます -->
+        <s:submit value="問い合わせ"/>
+    </s:form>
 </body>
 </html>
