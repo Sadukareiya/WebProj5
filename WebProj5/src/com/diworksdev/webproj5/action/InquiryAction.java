@@ -11,8 +11,6 @@ public class InquiryAction extends ActionSupport {
     /**
      * このメソッドがStruts2フレームワークから呼び出されます。
      * 正常に処理が完了するとSUCCESSが返され、対応するJSPページが表示されます。
-     *
-     * @return 成功時はSUCCESSを返します。
      */
     public String execute() {
         return SUCCESS;

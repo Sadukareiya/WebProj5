@@ -24,5 +24,26 @@
         <!-- ボタンを押すと、InquiryActionが実行されます -->
         <s:submit value="問い合わせ"/>
     </s:form>
+
+    <!-- 新規ユーザー登録フォーム -->
+	<br>
+	<h3>新規ユーザー登録</h3>
+
+	<!-- GET 通信を使用したフォーム -->
+	<h4>GET 通信</h4>
+	<s:form method="get" action="TestAction">
+    	<s:textfield name="username" label="ユーザー名" />
+    	<s:password name="password" label="パスワード" />
+    	<s:submit value="送信" />
+	</s:form>
+
+	<!-- POST 通信を使用したフォーム -->
+	<h4>POST 通信</h4>
+	<s:form method="post" action="TestAction">
+    	<s:textfield name="username" label="ユーザー名" />
+    	<s:password name="password" label="パスワード" />
+    	<s:submit value="送信" />
+	</s:form>
+
 </body>
 </html>

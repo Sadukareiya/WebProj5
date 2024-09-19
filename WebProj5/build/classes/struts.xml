@@ -54,6 +54,14 @@
             <result name="success">inquiryComplete.jsp</result>
         </action>
 
+        <!-- TestActionの設定 -->
+        <action name="TestAction"
+        		class="com.diworksdev.webproj5.action.TestAction"
+        		method="execute">
+       		<!-- 成功した場合に推移するページ -->
+		<result name="success">test.jsp</result>
+		</action>
+
 
     </package>
 </struts>
